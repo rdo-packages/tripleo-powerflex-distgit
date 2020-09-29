@@ -16,7 +16,12 @@ Source0:        https://github.com/dell/tripleo-powerflex/archive/%{upstream_ver
 BuildArch:      noarch
 BuildRequires:  git
 
+%if 0%{?fedora} || 0%{?rhel} > 7
 Requires:       python3dist(ansible)
+%else
+Requires:       ansible
+%endif
+
 Requires:       openstack-tripleo-heat-templates
 
 %description
