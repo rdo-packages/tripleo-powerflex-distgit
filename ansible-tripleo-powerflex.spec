@@ -14,7 +14,7 @@ URL:            https://github.com/dell/tripleo-powerflex
 Source0:        https://github.com/dell/tripleo-powerflex/archive/%{upstream_version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  git
+BuildRequires:  git-core
 
 Requires:       python3dist(ansible)
 Requires:       openstack-tripleo-heat-templates
