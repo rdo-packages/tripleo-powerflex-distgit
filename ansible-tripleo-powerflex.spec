@@ -4,8 +4,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           ansible-%{rolename}
-Version:        XXX
-Release:        XXX
+Version:        1.0.0
+Release:        1%{?dist}
 Summary:        Ansible role for setting up PowerFlex for TripleO
 
 Group:          System Environment/Base
@@ -50,4 +50,7 @@ cp -r templates/overcloud/deployment/powerflex-ansible %{buildroot}%{_datadir}/o
 
 
 %changelog
+* Mon Oct 18 2021 RDO <dev@lists.rdoproject.org> 1.0.0-1
+- Update to 1.0.0
+
 
